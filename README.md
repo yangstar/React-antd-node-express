@@ -12,7 +12,7 @@ $ npm start
 	
 
 	var hostProxy = proxy({
-	  	target: 'http://10.10.2.156:8080',
+	  	target: 'http://:',
 	 	changeOrigin: true,
 	  	logLevel: 'debug'
 	});
