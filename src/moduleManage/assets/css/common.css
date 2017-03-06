@@ -1,0 +1,438 @@
+.ant-layout-aside {
+  position: relative;
+  min-height: 100%;
+}
+
+tr .BarCode {
+  text-align: center !important;
+}
+.ant-layout-aside .ant-layout-logo {
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  color: #fff;
+  background: #0ae;
+  text-align: center;
+}
+
+.ant-layout-aside-collapse .ant-layout-logo {
+  width: 100%;
+}
+
+.ant-layout-aside .ant-layout-sider {
+  width: 224px;
+  background: #2c3544;
+  position: absolute;
+  overflow: visible;
+  padding-bottom: 24px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.ant-menu-dark, .ant-menu-dark .ant-menu-sub {
+  color: #999;
+  background: #2c3544;
+}
+
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+  background: #212833 !important;
+}
+
+.ant-layout-header h2 {
+  display: inline-block;
+  height: inherit;
+  line-height: 60px;
+  margin-left: 20px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.ant-layout-header .sign-bar {
+  display: inline-block;
+  float: right;
+  color: #fff;
+}
+
+.ant-layout-header .sign-phone {
+  font-size: 15px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.sign-phone a {
+  color: #fff;
+}
+
+.ant-layout-header .sign-out {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-left: 1px solid #3bc1f6;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.ant-layout-aside-collapse .ant-layout-sider {
+  width: 64px;
+  transition: all 0.3s ease;
+}
+
+.ant-layout-aside .ant-layout-sider > .ant-menu {
+  margin: 20px 0;
+}
+
+.ant-layout-aside .ant-layout-sider > .ant-menu > .ant-menu-item {
+  margin: 16px 0;
+}
+
+/*重写导航菜单*/
+.ant-menu-dark .ant-menu-item > .nav-text, .ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {
+  font-size: 14px !important;
+}
+
+.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub,
+.ant-menu-dark .ant-menu-item,
+.ant-menu-dark .ant-menu-item > a {
+  color: #76919c ;
+}
+
+.ant-layout-aside .ant-layout-sider > .ant-menu > .ant-menu-item .nav-text {
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+.ant-layout-aside .ant-layout-sider > .ant-menu > .ant-menu-item > .anticon {
+  transition: font-size .3s;
+}
+
+.ant-layout-aside-collapse .ant-layout-sider > .ant-menu > .ant-menu-item {
+  transition: all 0s ease;
+}
+
+.ant-layout-aside-collapse .ant-layout-sider > .ant-menu > .ant-menu-item > .anticon {
+  font-size: 16px;
+  display: inline-block;
+}
+
+.ant-layout-aside-collapse .ant-layout-sider > .ant-menu > .ant-menu-item .nav-text {
+  display: none;
+}
+
+.ant-layout-aside-collapse .ant-layout-sider > .ant-menu > .ant-menu-item:hover {
+  background: #212833;
+  color: #fff;
+  transition: all 0s ease;
+}
+
+.ant-layout-aside-collapse .ant-layout-sider > .ant-menu > .ant-menu-item:hover .nav-text {
+  display: inline-block;
+  vertical-align: top;
+  background: #212833;
+  padding-right: 16px;
+  border-radius: 0 5px 5px 0;
+}
+
+.ant-menu-dark.ant-menu-inline .ant-menu-item-selected {
+  background: #212833;
+  color: #eee;
+}
+
+/* 实际使用中需要改成 position: fixed */
+.ant-layout-aside .ant-aside-action {
+  height: 42px;
+  width: 224px;
+  position: fixed;
+  bottom: 0;
+  background: #212833;
+  color: #fff;
+  text-align: center;
+  line-height: 42px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ant-layout-aside-collapse .ant-aside-action {
+  width: 64px;
+  transition: all 0.3s ease;
+}
+
+.form-wrapper .ant-form-item-label {
+  width: 120px;
+}
+
+.employeeId {
+  display: none;
+}
+
+.ant-modal-content .ant-row {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.ant-layout-aside .ant-layout-header {
+  background: #01baf4;
+  height: 64px;
+  border-bottom: 1px solid #01baf4;
+}
+
+.ant-layout-aside .ant-layout-breadcrumb {
+  margin: 7px 0 -17px 24px;
+}
+
+.ant-layout-aside .ant-layout-main {
+  margin-left: 224px;
+  transition: all 0.3s ease;
+}
+
+.ant-layout-aside-collapse .ant-layout-main {
+  margin-left: 64px;
+  transition: all 0.3s ease;
+}
+
+.ant-layout-aside .ant-layout-container {
+  margin: 5px 16px 20px 16px;
+}
+
+.ant-layout-aside .ant-layout-content {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.ant-layout-aside .ant-layout-footer {
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  background: #fff;
+  border-top: 1px solid #e9e9e9;
+  width: 100%;
+}
+
+.jxs-search-wrapper {
+  margin: 10px 0 15px 0;
+}
+
+.jxs-search-wrapper .ant-btn {
+  margin-right: 10px;
+}
+
+.jxs-search-wrapper .ant-input,
+.jxs-search-wrapper .ant-select {
+  width: 132px;
+}
+
+.jxs-tool-wrapper {
+  margin-bottom: 10px;
+}
+
+.jxs-tool-wrapper .ant-btn {
+  margin-right: 10px;
+}
+
+.ant-table-thead > tr > th {
+  background: #f1f1f1;
+}
+
+.ant-table-tbody .selectRow {
+  background: #eaf8fe;
+}
+
+.ant-modal-body .tree-wrapper {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.operate-btns button {
+  background: #fff;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.operate-btns button:not([disabled]) {
+  border-color: #5ab6df;
+  color: #5ab6df;
+}
+
+.disSty .ant-input-wrapper input {
+  width: 48%;
+}
+
+.addTable {
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid #e9e9e9;
+  margin-top: 5px;
+}
+
+.addTable td {
+  height: 25px;
+  border: 1px solid #e9e9e9;
+  background: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+.addTable td input {
+  height: 30px;
+  border: none;
+  text-indent: 1em;
+  width: 100%;
+}
+
+.addTable td .ant-form-item {
+  margin-bottom: 0px !important;
+}
+
+.addTable td .has-error input {
+  border: 1px solid red;
+}
+
+.addTable td input:focus {
+  border: 1px solid #d9d9d9;
+}
+
+.addTable td a {
+  margin-right: 10px;
+}
+
+.addTable td span {
+  color: #57c5f7;
+}
+
+.navLine-wrap-h2 {
+  color: #2db7f5;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  text-indent: 1em;
+  border-left: 2px solid #2db7f5;
+  font-weight: normal;
+}
+
+.form-wrapper .ant-form-item-label{
+  vertical-align: top;
+}
+
+/*上传按钮组件样式*/
+.upload-box{
+  position: relative;
+}
+.upload-box .upload-btn{
+  padding: 4px 10px;
+  height: 80px;
+  width: 80px;
+  line-height: 30px;
+  position: relative;
+  cursor: pointer;
+  color: #888;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  top: 0;
+}
+.upload-box .upload-input{
+  position: absolute;
+  font-size: 100px;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+}
+.upload-box .upload-input:hover{
+
+}
+.upload-box .upload-img{
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+}
+.img-box .upload-img{
+  display: inline-block;
+}
+
+.upload-btn .btn-icon{
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+.upload-btn .btn-text{
+  text-align: center;
+}
+/* 价格修改样式*/
+.edit {
+  display: none;
+  position: relative;
+}
+
+.editing .edit {
+  display: block;
+}
+
+.editing .msg {
+  display: block!important;
+}
+
+.dbl-input label {
+  display: block;
+}
+.dbl-input .errorMsg {
+  border-color: #fe0000!important;
+  box-shadow: 0 0 3px #fe0000;
+}
+.dbl-input .msg {
+  display: none;
+  color: #fe0000;
+}
+
+.order-input .msg {
+  color: #fe0000;
+}
+
+.editing label {
+  display: none;
+}
+/* 价格修改样式 end*/
+
+
+.add-before .ant-input-group {
+  width: 160px;
+}
+
+
+.ant-btn-icon {
+  padding: 5px 9px!important;
+  border-style: dashed!important;
+  border-radius: 3px;
+}
+.ant-select-disabled .ant-select-selection,
+.ant-input[disabled], fieldset[disabled] .ant-input {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+
+.jxs-table .ant-table-thead > tr > th,
+.jxs-table .ant-table-tbody > tr > td {
+  padding: 12px 8px;
+}
+
+/* 重写日历 */
+.ant-calendar-month-panel {
+  top: 0;
+}
+
