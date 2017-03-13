@@ -14,6 +14,7 @@ var hostProxy = proxy({
   // target: 'http://10.10.2.178:8080',
    //target: 'http://10.10.1.80:8090',
   //target: 'http://yf2z.rap.rdjry.com/mockjsdata/3',
+  target: 'http://localhost',
   changeOrigin: true,
   logLevel: 'debug'
 });
