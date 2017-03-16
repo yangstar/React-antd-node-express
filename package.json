@@ -8,8 +8,7 @@
     "deploy": "NODE_ENV=production && rimraf dist/ && webpack --progress --profile --colors --config webpack.config.production.js",
     "build": "set NODE_ENV=production && rimraf dist/ && webpack --progress --profile --colors --config webpack.config.production.js",
     "lint": "eslint --ext .js src",
-    "start": "webpack && node server.js --profile --display-modules",
-    "start1": "webpack && node server.js"
+    "start": "webpack && node server.js"
   },
   "main": "index.js",
   "pre-commit": [
