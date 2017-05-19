@@ -10,7 +10,7 @@ const App = React.createClass({
   getInitialState () {
 
     var initContent = <MenuManage/>
-    var initKey = {title: '一级菜单', content: initContent, key: 'menu1'} 
+    var initKey = {title: 'table动态增减', content: initContent, key: 'menu1'} 
     const panes = [initKey];
     return {
       visible: false,

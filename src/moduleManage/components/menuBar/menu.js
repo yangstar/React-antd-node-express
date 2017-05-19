@@ -128,6 +128,22 @@ const MenuComponent = React.createClass({
               _me.props.cbPane(param);
 						}, 'menu2');
         break;
+        case 'menu3':
+          require.ensure([], function (require) {
+                Component = require('../../module/munuManage/menu3').default;
+                tabContent = <Component menuId={id}/>;
+                let param = {
+                  key: e.key,
+                  title: e.item.props.children,
+                  content: tabContent,
+                };
+                _me.setState({
+                  current: e.key,
+                  openKeys: e.keyPath.slice(1),
+                });
+                _me.props.cbPane(param);
+              }, 'menu2');
+          break;
     }
 
 

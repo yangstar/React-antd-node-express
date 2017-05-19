@@ -194,7 +194,7 @@ let MenuList = React.createClass({
     return (
       <div>
         <Table key={this.rowKey} dataSource={this.state.dataSource} columns={columns}/>
-        
+        {this.state.title}
         <ModalBox ref="ModalBox" {...ModalBoxProps}/>
       </div>
     );

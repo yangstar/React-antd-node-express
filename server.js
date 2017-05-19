@@ -7,7 +7,7 @@ var config = require('./webpack.config');
 var app = express();
 var compiler = webpack(config);
 var host = require('ip').address() || 'localhost';
-var port = 3001;
+var port = 5001;
 
 var hostProxy = proxy({
 
@@ -49,3 +49,7 @@ app.listen(port, host, function (err) {
 
 });
 
+
+app.get('/posts.js', function (req, res) {
+  res.send('posts.js');
+});
