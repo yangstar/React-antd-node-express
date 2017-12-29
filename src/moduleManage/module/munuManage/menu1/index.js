@@ -76,10 +76,31 @@ let MenuList = React.createClass({
 
     
   },
+  getTableArry (data, o) {
+  　　let arry = [];
+
+      for(let key in data) {
+  　　　　let curKey = parseInt(key.replace(/[^0-9]+/g, '')); // 获取key里的数字标记
+  　　　　let keyName =key.replace(/[^a-zA-Z]+/g, ''); // 获取 key里的字段名称
+  　　　　if(!isNaN(curKey)){// 过滤掉不包含数字标记的
+      　　　　if(`${curKey}` in arry) {// 过滤掉已经追加到arry的obj
+  
+      　　　　}else {
+        　　    let obj = {};
+                for (let i in o){
+                  obj[i] = data[`${curKey}${i}`]
+                } 
+      　　　　   arry.push(obj)　　
+      　　　　}
+  　　    }
+        
+  　　}
+      return arry;
+  },
   handleOk() {
     
     let data = this.refs.ModalBox.getFieldsValue()
-    console.log(data)
+    
     this.refs.ModalBox.validateFields((err, values) => {
       console.log(err)
 
@@ -89,7 +110,13 @@ let MenuList = React.createClass({
         this.setState({
           visible: false,
         });
-
+        console.log('11111111111',data)
+        let obj ={
+          rederName:'',
+          rederPhone:''
+        }
+        let aa = this.getTableArry(data, obj);
+        console.log('22222222222',aa)
         this.resetForm();
         this.fetch();
       }else { // 校验不通过
